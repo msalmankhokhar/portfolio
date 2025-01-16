@@ -99,3 +99,15 @@ export const PROJECTS = [
         url: 'https://www.alhabibtravel.co.uk'
     },
 ]
+
+export const SOCIAL_ACCOUNTS = {
+    facebook: {
+        url: 'https://www.facebook.com/msalmankhokhar13'
+    },
+    linkedin: {
+        url: 'https://www.linkedin.com/in/msalmankhokhar'
+    },
+    github: {
+        url: 'https://github.com/msalmankhokhar'
+    },
+}

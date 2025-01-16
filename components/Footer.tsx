@@ -1,3 +1,4 @@
+import { SOCIAL_ACCOUNTS } from '@/data'
 import { Facebook, Github, Heart, Linkedin } from 'lucide-react'
 import Link from 'next/link'
 import React from 'react'
@@ -10,13 +11,13 @@ export default function Footer() {
                 Made with <Heart size={14} className='inline mb-0.5' fill='red' stroke='red' /> by Salman
             </p>
             <div className='flex gap-2 items-center'>
-                <Link href={'#'} className='aspect-square flex items-center justify-center border p-2 rounded'>
+                <Link target='_blank' href={SOCIAL_ACCOUNTS.facebook.url} className='aspect-square flex items-center justify-center border p-2 rounded'>
                     <Facebook size={16} />
                 </Link>
-                <Link href={'#'} className='aspect-square flex items-center justify-center border p-2 rounded'>
+                <Link target='_blank' href={SOCIAL_ACCOUNTS.linkedin.url} className='aspect-square flex items-center justify-center border p-2 rounded'>
                     <Linkedin size={16} />
                 </Link>
-                <Link href={'#'} className='aspect-square flex items-center justify-center border p-2 rounded'>
+                <Link target='_blank' href={SOCIAL_ACCOUNTS.github.url} className='aspect-square flex items-center justify-center border p-2 rounded'>
                     <Github size={16} />
                 </Link>
             </div>
