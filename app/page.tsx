@@ -1,11 +1,22 @@
+"use client"
 import Button from "@/components/Button";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/sections/Hero";
 import Projects from "@/components/sections/Projects";
-import { Mail, Send } from "lucide-react";
+import { PERSONAL_DETAILS } from "@/data";
+import { Copy, Mail, Send } from "lucide-react";
+import { useState } from "react";
 
 export default function Home() {
+
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = ()=>{
+    navigator.clipboard.writeText(PERSONAL_DETAILS.email);
+    setCopied(true)
+  }
+  
   return (
     <>
     <Navbar />
@@ -19,12 +30,16 @@ export default function Home() {
       <div className="mb-5 flex gap-2 items-center justify-between max-w-xl bg-secondary-900 border border-secondary-800 py-2.5 px-3 rounded-lg text-white">
         <div className="flex gap-2 items-center">
           <Mail size={16} color="white" />
-          <p>msalmankhokhar13@gmail.com</p>
+          <p>{PERSONAL_DETAILS.email}</p>
         </div>
         {/* Copy Button */}
-        {/* <Button variant="btn-primary-white" icon={<Copy size={16} />}>Copy</Button> */}
+        <Button onClick={handleCopy} className={copied ? 'text-green-600' : undefined} variant="btn-primary-white">
+          {
+            copied ? 'Copied' : <Copy size={16} />
+          }
+        </Button>
       </div>
-      <Button href={`mailto:msalmankhokhar13@gmail.com`} icon={<Send size={16} />} variant="btn-primary">Contact Me Now</Button>
+      <Button href={`mailto:${PERSONAL_DETAILS.email}`} icon={<Send size={16} />} variant="btn-primary">Contact Me Now</Button>
     </section>
 
     <Footer />

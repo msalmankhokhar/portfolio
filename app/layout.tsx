@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" data-mode="dar">
+    <html lang="en" data-mode="light">
       <body
         className={`${font.className} antialiased dark:bg-secondary-1000`}
       >

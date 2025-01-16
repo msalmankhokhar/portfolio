@@ -13,6 +13,13 @@ export interface ProjectInterface {
     url: string;
 }
 
+export const PERSONAL_DETAILS = {
+    name: 'Salman Khokhar',
+    firstName: 'Salman',
+    lastName: 'Khokhar',
+    email: 'salman@salmanmalik.pro'
+}
+
 export const TECH_STACK = {
     tailwindCss: {
         title: 'Tailwind CSS',
