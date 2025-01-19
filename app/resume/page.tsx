@@ -13,9 +13,9 @@ export default function Resume() {
     return (
         <main className='max-w-screen-lg mx-auto min-h-screen py-1 px-3'>
             <div className='flex flex-col gap-2 border-b border-secondary-400 py-2'>
-                <h1 className='flex items-center gap-5 text-xl text-center text-secondary-1000'>
+                <h1 className='flex flex-wrap sm:items-center gap-5 text-xl text-center text-secondary-1000'>
                     <span className='uppercase font-bold'>{PERSONAL_DETAILS.resume.name}</span>
-                    <span className='font-normal text-sm'>Full Stack Developer | React, Next.js Developer | Backend Engineer</span>
+                    <span className='font-normal text-left text-sm'>Full Stack Developer | React, Next.js Developer | Backend Engineer</span>
                 </h1>
 
                 <div className='flex flex-wrap gap-y-2 gap-x-7 items-center text-sm text-secondary-900'>
@@ -41,14 +41,14 @@ export default function Resume() {
 
             <div className='flex flex-col py-2 gap-1 border-b border-secondary-400'>
                 <h2 className='uppercase font-semibold text-lg'>Summary</h2>
-                <p className='pl-5'>
+                <p className='sm:pl-5'>
                     Experienced and versatile <strong>Software Engineer</strong> with a strong foundation in <strong>full-stack web development</strong> and expertise in technologies such as <strong>React</strong>, <strong>Next.js</strong>, <strong>Python Flask</strong>, <strong>Node.js</strong>, and <strong>Express</strong>. Skilled in designing <strong>responsive front-end user interfaces</strong>, developing <strong>robust back-end APIs</strong>, and managing <strong>databases</strong> to create <strong>scalable</strong> and <strong>efficient web applications</strong>. Currently expanding my skill set by learning <strong>mobile development</strong> with <strong>React Native</strong> and continuously exploring emerging technologies. Known for delivering <strong>clean, maintainable code</strong> and solving <strong>complex problems</strong> with innovative solutions.
                 </p>
             </div>
 
             <div className='flex flex-col py-2 gap-1 border-b border-secondary-400'>
                 <h2 className='uppercase font-semibold text-lg'>Experience</h2>
-                <div className='pl-5 flex gap-7'>
+                <div className='sm:pl-5 flex gap-7'>
                     <div className='flex flex-col text-sm'>
                         <h3 className='font-semibold text-base'>Web Development Team Lead</h3>
                         <p className='font text-secondary-800'>Cortex AI Tech, Islamabad, Pakistan</p>
@@ -60,7 +60,7 @@ export default function Resume() {
 
             <div className='flex flex-col py-2 gap-1 border-b border-secondary-400'>
                 <h2 className='uppercase font-semibold text-lg'>Skills</h2>
-                <div className="pl-5 flex gap-x-20 gap-y-8 flex-wrap">
+                <div className="sm:pl-5 flex flex-col sm:flex-row gap-x-20 gap-y-8 flex-wrap">
                     <div className='max-w-sm text-wrap'>
                         <h3 className='font-semibold mb-1'>Technical</h3>
                         <ul className='text-sm'>
@@ -113,7 +113,7 @@ export default function Resume() {
 
             <div className='flex flex-col py-2 border-b border-secondary-400 gap-1'>
                 <h2 className='uppercase font-semibold text-lg'>Projects</h2>
-                <div className='pl-5 flex flex-wrap flex-col min-[954px]:flex-row gap-3'>
+                <div className='sm:pl-5 flex flex-wrap flex-col min-[954px]:flex-row gap-3'>
                     <div className='flex flex-col text-sm min-[954px]:max-w-lg rounded-lg p-3 border-secondary-400'>
                         <h3 className='font-semibold text-base'>Al Habib Travels UK</h3>
                         <p className='font text-secondary-800'>Website for a travel company in UK built with Next.js 14 and mongodb</p>
@@ -154,7 +154,7 @@ export default function Resume() {
 
             <div className='flex flex-col py-2 border-b border-secondary-400 gap-1'>
                 <h2 className='uppercase font-semibold text-lg'>Education</h2>
-                <div className='pl-5 flex gap-7'>
+                <div className='sm:pl-5 flex flex-col sm:flex-row gap-y-1 gap-x-7'>
                     <div className='flex flex-col text-sm'>
                         <h3 className='font-semibold text-base'>FSc. Pre medical</h3>
                         <p className='font text-secondary-800'>Divisional Public School & College Sahiwal</p>
