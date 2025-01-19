@@ -16,7 +16,7 @@ export default function Navbar() {
                 </ul> */}
             </div>
             <div className="hidden sm:flex gap-3 items-center justify-center">
-                <a download={true} target="_blank" href="/docs/salman-resume.pdf">
+                <a target="_blank" href="/docs/salman-resume.pdf">
                     <Button variant="btn-hollow-colored" icon={<ArrowDownToLine size={16} />}>Download CV</Button>
                 </a>
             </div>

@@ -1,3 +1,4 @@
+
 export interface TechstackInterface {
     title: string;
     icon: string;
@@ -17,7 +18,19 @@ export const PERSONAL_DETAILS = {
     name: 'Salman Khokhar',
     firstName: 'Salman',
     lastName: 'Khokhar',
-    email: 'salman@salmanmalik.pro'
+    email: 'salman@salmanmalik.pro',
+    resume: {
+        name: 'Muhammad Salman',
+        Phone: '+92 318 6456552',
+        email: {
+            gmail_msalmankhokhar13: 'msalmankhokhar13@gmail.com',
+            domain_salman: 'salman@salmanmalik.pro',
+        },
+        address:{
+            short: 'Sahiwal, Pakistan'
+        },
+        website: 'www.salmanmalik.pro'
+    }
 }
 
 export const TECH_STACK = {
