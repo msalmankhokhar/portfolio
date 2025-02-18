@@ -118,6 +118,20 @@ export const PROJECTS = [
         ],
         url: 'https://www.alhabibtravel.co.uk'
     },
+    {
+        key: 4,
+        title: 'HR Management Dashboard',
+        desc: 'Web based HR Management Dashboard using Next JS and Mongodb',
+        thumbnail: 'catportal.png',
+        techstack: [
+            TECH_STACK.react,
+            TECH_STACK.nextJs,
+            TECH_STACK.tailwindCss,
+            TECH_STACK.typeScript,
+            TECH_STACK.figma
+        ],
+        url: 'https://cortexaitech-portal.vercel.app'
+    },
 ]
 
 export const SOCIAL_ACCOUNTS = {
